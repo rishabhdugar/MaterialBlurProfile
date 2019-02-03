@@ -1,29 +1,47 @@
 package com.example.rishabhdugar.materialblurbackground;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.ImageView;
+
+import com.example.rishabhdugar.materialblurbackground.util.BlurTransformation;
+import com.example.rishabhdugar.materialblurbackground.util.CircleTransform;
+import com.example.rishabhdugar.materialblurbackground.util.CustomLayout;
+import com.squareup.picasso.Picasso;
 
 public class MainActivity extends AppCompatActivity {
 
+    Context mContext;
+    String pic_url = "https://wallpapercave.com/download/beautiful-backgrounds-for-computer-STgHPst";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        mContext = getApplicationContext();
+        findViews();
+        setListeners();
+    }
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+    private void setListeners() {
+        Picasso.with(mContext)
+                .load(pic_url)
+                .noFade()
+                .placeholder(R.mipmap.ic_placeholder_man)
+                .transform(new CircleTransform())
+                .into(_imgProfile);
+        Picasso.with(mContext).load(pic_url).transform(new BlurTransformation(mContext)).into(mCustomLayout);
+
+    }
+    CustomLayout mCustomLayout;
+    ImageView _imgProfile;
+    private void findViews() {
+        mCustomLayout = (CustomLayout) findViewById(R.id.profileBackground);
+        _imgProfile = findViewById(R.id.imgProfile);
     }
 
 }
