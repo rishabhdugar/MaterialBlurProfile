@@ -1,4 +1,26 @@
 <resources>
     <string name="app_name">MaterialBlurBackground</string>
     <string name="title_activity_main">MainActivity</string>
+
+    <string name="placeholder_name" translatable="false">Guest</string>
+    <string name="placeholder_screen_name" translatable="false">guest_username</string>
+    <string name="placeholder_followers_count" translatable="false">1533</string>
+    <string name="placeholder_following_count" translatable="false">480</string>
+
+
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+
+    <string name="followers_title">Followers</string>
+    <string name="followers_desc">List of your followers</string>
+
+
+    <string name="likes">Likes</string>
+    <string name="likes_desc">List of your Likers</string>
+
+
+    <string name="suggest_friends">Suggested Friends</string>
+    <string name="suggested_desc">You should be friends with them</string>
+
+
 </resources>

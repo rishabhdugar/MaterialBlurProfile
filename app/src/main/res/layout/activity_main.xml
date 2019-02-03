@@ -11,7 +11,7 @@
         android:orientation="vertical"
         android:weightSum="1">
 
-        <com.sarkisian.boilerplate.util.CustomLayout
+        <com.example.rishabhdugar.materialblurbackground.util.CustomLayout
             android:id="@+id/profileBackground"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
@@ -51,7 +51,6 @@
                             <ImageView
                                 android:layout_margin="5dp"
                                 android:padding="5dp"
-                                android:id="@+id/nav_open"
                                 android:layout_width="40dp"
                                 android:layout_height="40dp"
                                 android:src="@mipmap/ic_nav" />
@@ -61,7 +60,6 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="end">
                                 <ImageView
-                                    android:id="@+id/refresh"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:src="@mipmap/ic_refresh" />
@@ -193,7 +191,7 @@
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
-        </com.sarkisian.boilerplate.util.CustomLayout>
+        </com.example.rishabhdugar.materialblurbackground.util.CustomLayout>
 
 
         <ScrollView
@@ -208,7 +206,6 @@
                 android:orientation="vertical">
 
                 <LinearLayout
-                    android:id="@+id/non_followers_view"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -234,7 +231,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/product_sans"
-                            android:text="@string/non_followers"
+                            android:text="@string/followers_title"
                             android:textColor="@color/black"
                             android:textSize="@dimen/text_title_medium_small" />
 
@@ -242,13 +239,12 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/product_sans"
-                            android:text="@string/non_followers_desc"
+                            android:text="@string/followers_desc"
                             android:textColor="@color/dark_grey"
                             android:textSize="@dimen/text_title_medium" />
                     </LinearLayout>
 
                     <TextView
-                        android:id="@+id/non_followers_count"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
@@ -268,7 +264,6 @@
                     android:background="@color/light_grey" />
 
                 <LinearLayout
-                    android:id="@+id/fans_view"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -294,7 +289,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/product_sans"
-                            android:text="@string/fans"
+                            android:text="@string/likes"
                             android:textColor="@color/black"
                             android:textSize="@dimen/text_title_medium_small" />
 
@@ -302,13 +297,12 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/product_sans"
-                            android:text="@string/fans_desc"
+                            android:text="@string/likes_desc"
                             android:textColor="@color/dark_grey"
                             android:textSize="@dimen/text_title_medium" />
                     </LinearLayout>
 
                     <TextView
-                        android:id="@+id/fans_count"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
@@ -328,66 +322,6 @@
                     android:background="@color/light_grey" />
 
                 <LinearLayout
-                    android:id="@+id/mutual_view"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:weightSum="1">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.2"
-                        android:padding="@dimen/icon_main_padding"
-                        android:src="@mipmap/ic_mutual" />
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
-                        android:layout_weight="0.6"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:weightSum="1">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/product_sans"
-                            android:text="@string/mutual_followers"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/text_title_medium_small" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/product_sans"
-                            android:text="@string/mutual_followers_desc"
-                            android:textColor="@color/dark_grey"
-                            android:textSize="@dimen/text_title_medium" />
-                    </LinearLayout>
-
-                    <TextView
-                        android:id="@+id/mutual_followers_count"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
-                        android:layout_weight="0.3"
-                        android:fontFamily="@font/product_sans"
-                        android:gravity="center"
-                        android:padding="5dp"
-                        android:text="@string/placeholder_following_count"
-                        android:textColor="@color/black"
-                        android:textSize="@dimen/text_title_medium_small" />
-                </LinearLayout>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_margin="@dimen/view_line_margin"
-                    android:background="@color/light_grey" />
-                <LinearLayout
-                    android:id="@+id/copy_followers_view"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -413,7 +347,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/product_sans"
-                            android:text="@string/copy_followers"
+                            android:text="@string/suggest_friends"
                             android:textColor="@color/black"
                             android:textSize="@dimen/text_title_medium_small" />
 
@@ -421,7 +355,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/product_sans"
-                            android:text="@string/copy_followers_desc"
+                            android:text="@string/suggested_desc"
                             android:textColor="@color/dark_grey"
                             android:textSize="@dimen/text_title_medium" />
                     </LinearLayout>
@@ -440,123 +374,7 @@
                         android:textSize="@dimen/text_title_medium_small" />
                 </LinearLayout>
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_margin="@dimen/view_line_margin"
-                    android:background="@color/light_grey" />
-                <LinearLayout
-                    android:id="@+id/whitelisted_view"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:weightSum="1">
 
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.2"
-                        android:padding="@dimen/icon_main_padding"
-                        android:src="@mipmap/ic_whitelist" />
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
-                        android:layout_weight="0.6"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:weightSum="1">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/product_sans"
-                            android:text="@string/whitelisted"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/text_title_medium_small" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/product_sans"
-                            android:text="@string/whitelisted_desc"
-                            android:textColor="@color/dark_grey"
-                            android:textSize="@dimen/text_title_medium" />
-                    </LinearLayout>
-
-                    <TextView
-                        android:id="@+id/whitelisted_count"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
-                        android:layout_weight="0.3"
-                        android:fontFamily="@font/product_sans"
-                        android:gravity="center"
-                        android:padding="5dp"
-                        android:text="@string/placeholder_following_count"
-                        android:textColor="@color/black"
-                        android:textSize="@dimen/text_title_medium_small" />
-                </LinearLayout>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_margin="@dimen/view_line_margin"
-                    android:background="@color/light_grey" />
-                <LinearLayout
-                    android:id="@+id/requested_view"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:weightSum="1">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.2"
-                        android:padding="@dimen/icon_main_padding"
-                        android:src="@mipmap/ic_myaccounts" />
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
-                        android:layout_weight="0.6"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:weightSum="1">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/product_sans"
-                            android:text="@string/requested"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/text_title_medium_small" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/product_sans"
-                            android:text="@string/requested_desc"
-                            android:textColor="@color/dark_grey"
-                            android:textSize="@dimen/text_title_medium" />
-                    </LinearLayout>
-
-                    <TextView
-                        android:id="@+id/requested_count"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
-                        android:layout_weight="0.3"
-                        android:fontFamily="@font/product_sans"
-                        android:gravity="center"
-                        android:padding="5dp"
-                        android:text="@string/placeholder_following_count"
-                        android:textColor="@color/black"
-                        android:textSize="@dimen/text_title_medium_small" />
-                </LinearLayout>
 
             </LinearLayout>
         </ScrollView>

@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="color_primary_app">#673AB7</color>
+    <color name="color_primary_app_dark">#512DA8</color>
+    <color name="color_233944">#233944</color>
+    <color name="color_e64f72">#e64f72</color>
+    <color name="color_b9ffffff">#b9ffffff</color>
+    <color name="primary_dark_transparent">#7712353d</color>
+    <color name="accent">#27AE60</color>
+    <color name="green">#27AE60</color>
+    <color name="red">#FF0000</color>
+    <color name="dark_yellow">#FFB300</color>
+    <color name="orange">#FF7F50</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorPrimary">#673AB7</color>
+    <color name="colorPrimaryDark">#512DA8</color>
+    <color name="colorBlack">#212121</color>
+    <color name="colorTextPrimary">#212121</color>
+    <color name="colorTextSecondary">#757575</color>
+    <color name="colorAccent">#27AE60</color>
+    <color name="blue">#2196F3</color>
+
+    <drawable name="dr_black_trans">#44000000</drawable>
+    <color name="black">#000000</color>
+    <color name="jet">#222222</color>
+    <color name="oil">#333333</color>
+    <color name="monsoon">#777777</color>
+    <color name="jumbo">#888888</color>
+    <color name="dark_grey">#888888</color>
+    <color name="aluminum">#999999</color>
+    <color name="base">#AAAAAA</color>
+    <color name="iron">#CCCCCC</color>
+    <color name="light_grey">#888888</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="gold">#FFD700</color>
 </resources>
