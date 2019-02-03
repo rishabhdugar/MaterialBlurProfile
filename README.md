@@ -21,6 +21,8 @@ Picasso.with(mContext)
 Picasso.with(mContext).load(pic_url).transform(new BlurTransformation(mContext)).into(mCustomLayout);
 ```
 
+Inspired From 
+https://github.com/wasabeef/picasso-transformations
 
                
                 
