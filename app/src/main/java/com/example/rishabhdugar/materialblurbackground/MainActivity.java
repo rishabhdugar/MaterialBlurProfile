@@ -17,7 +17,7 @@ import com.squareup.picasso.Picasso;
 public class MainActivity extends AppCompatActivity {
 
     Context mContext;
-    String pic_url = "https://wallpapercave.com/download/beautiful-backgrounds-for-computer-STgHPst";
+    String pic_url = "https://firebasestorage.googleapis.com/v0/b/unfollow-cool-app.appspot.com/o/47392975_10218055570686552_1840718147208871936_n.jpg?alt=media&token=98063293-fa77-425c-b07d-3973225169e9";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
