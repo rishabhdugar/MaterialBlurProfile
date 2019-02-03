@@ -216,7 +216,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="0.2"
                         android:padding="@dimen/icon_main_padding"
-                        android:src="@mipmap/ic_non_follower" />
+                        android:src="@mipmap/follower" />
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -274,7 +274,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="0.2"
                         android:padding="@dimen/icon_main_padding"
-                        android:src="@mipmap/ic_fans" />
+                        android:src="@mipmap/ic_rate" />
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -332,7 +332,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="0.2"
                         android:padding="@dimen/icon_main_padding"
-                        android:src="@mipmap/ic_copy_followers" />
+                        android:src="@mipmap/suggested" />
 
                     <LinearLayout
                         android:layout_width="0dp"
